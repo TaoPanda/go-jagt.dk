@@ -7,6 +7,7 @@
 <main>
     <div class="slide">
         <img src="https://source.unsplash.com/1600x900/?hunting" alt="">
+        <img src="https://source.unsplash.com/1600x900/?hunting" alt="">
     </div>
 <div>
     <h2>Lorem Ipsum</h2>
