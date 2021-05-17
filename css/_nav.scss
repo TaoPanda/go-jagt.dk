@@ -1,5 +1,8 @@
 nav {
   background-color: $navbgcolor;
+  position: sticky;
+  top: -2px;
+  z-index: 1;
   ul {
     padding: 0;
     margin: 0;
@@ -15,5 +18,12 @@ nav {
       background-color: darken($navbgcolor, 10%);
       color: white;
     }
+  }
+}
+@media screen and (max-width: 400px) {
+  nav ul {
+    padding-left: 0;
+    flex-direction: column;
+    text-align: center;
   }
 }

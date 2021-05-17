@@ -6,11 +6,21 @@ footer {
     margin: 0;
     padding: 0;
     list-style: ">";
+    margin-bottom: 2%;
+    margin-top: 2%;
     ::marker {
       color: $footermarkercolor;
     }
     li {
       margin: 3px;
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  footer {
+    flex-wrap: wrap;
+    ul {
+      width: 34%;
     }
   }
 }

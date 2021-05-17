@@ -21,6 +21,14 @@ img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 1120px) {
+  .wrapper {
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 header img {
   width: 100px;
   margin: 20px;
@@ -28,6 +36,10 @@ header img {
 
 nav {
   background-color: #747373;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+  z-index: 1;
 }
 
 nav ul {
@@ -51,6 +63,17 @@ nav a:hover {
   color: white;
 }
 
+@media screen and (max-width: 400px) {
+  nav ul {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 footer {
   background-color: #323f2d;
   display: -webkit-box;
@@ -64,6 +87,8 @@ footer ul {
   margin: 0;
   padding: 0;
   list-style: ">";
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 footer ul ::marker {
@@ -72,6 +97,16 @@ footer ul ::marker {
 
 footer ul li {
   margin: 3px;
+}
+
+@media screen and (max-width: 630px) {
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer ul {
+    width: 34%;
+  }
 }
 
 main {
@@ -116,5 +151,44 @@ main > div div {
 
 main h2 {
   width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  main .slide {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  main .slide {
+    height: 31vw;
+  }
+  main > div :nth-of-type(even) {
+    display: none;
+  }
+  main > div div {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main > div div:last-of-type {
+    display: none;
+  }
+  main > div div {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main .slide {
+    display: none;
+  }
+  main > div div:first-of-type {
+    display: none;
+  }
+  main > div div {
+    width: 99%;
+  }
 }
 /*# sourceMappingURL=forside.css.map */

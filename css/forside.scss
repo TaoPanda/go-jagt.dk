@@ -31,3 +31,50 @@ main {
     width: 100%;
   }
 }
+@media screen and (max-width: 1400px) {
+  main .slide {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  main {
+    .slide {
+      height: 31vw;
+    }
+    > div {
+      :nth-of-type(even) {
+        display: none;
+      }
+      div {
+        width: 32%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  main {
+    > div {
+      div:last-of-type {
+        display: none;
+      }
+      div {
+        width: 49%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  main {
+    .slide {
+      display: none;
+    }
+    > div {
+      div:first-of-type {
+        display: none;
+      }
+      div {
+        width: 99%;
+      }
+    }
+  }
+}
