@@ -1,0 +1,33 @@
+@import "variables", "header", "nav", "footer";
+main {
+  padding: 0 50px;
+  .slide {
+    display: block;
+    background-color: $subbgcolor;
+    position: relative;
+    height: 25vw;
+    img {
+      position: absolute;
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darken($subbgcolor, 5%);
+    div {
+      width: 19%;
+      margin: 0.5%;
+      padding: 0.5%;
+      box-sizing: border-box;
+      background-color: darken($subbgcolor, 20%);
+      border-radius: 3px;
+    }
+  }
+  h2 {
+    width: 100%;
+  }
+}

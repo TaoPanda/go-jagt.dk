@@ -1,0 +1,16 @@
+footer {
+  background-color: $footerbgcolor;
+  display: flex;
+  justify-content: space-around;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: ">";
+    ::marker {
+      color: $footermarkercolor;
+    }
+    li {
+      margin: 3px;
+    }
+  }
+}

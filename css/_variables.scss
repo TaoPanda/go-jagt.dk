@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+$headfont: "Roboto", sans-serif;
+$mainfont: "Open Sans", sans-serif;
+$mainbgcolor: #444;
+$subbgcolor: #e6e6e6;
+$navbgcolor: rgb(116, 115, 115);
+$maintextcolor: #000;
+$linkcolor: #183811;
+$buttonbgcolor: #1e690d;
+$footerbgcolor: #323f2d;
+$footermarkercolor: rgb(226, 128, 0);
+body {
+  font-family: $mainfont;
+  background-color: $mainbgcolor;
+  background-image: url(../img/sunset_background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  margin: 0;
+}
+.wrapper {
+  background-color: $subbgcolor;
+  width: 80%;
+  margin: auto;
+  min-width: 1100px;
+}
+img {
+  max-width: 100%;
+}

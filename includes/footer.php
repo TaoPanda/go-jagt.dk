@@ -1,0 +1,37 @@
+    <footer>
+        <ul>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+        </ul>
+        <ul>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+        </ul>
+        <ul>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+        </ul>
+        <ul>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+            <li>Filler</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
