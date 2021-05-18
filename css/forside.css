@@ -64,6 +64,9 @@ nav a:hover {
 }
 
 @media screen and (max-width: 400px) {
+  nav {
+    position: relative;
+  }
   nav ul {
     padding-left: 0;
     -webkit-box-orient: vertical;

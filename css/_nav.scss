@@ -21,9 +21,12 @@ nav {
   }
 }
 @media screen and (max-width: 400px) {
-  nav ul {
-    padding-left: 0;
-    flex-direction: column;
-    text-align: center;
+  nav {
+    ul {
+      padding-left: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    position: relative;
   }
 }

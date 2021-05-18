@@ -9,5 +9,5 @@
 <body>
 <div class="wrapper">
     <header>
-        <img src="./img/go-jagt_LogoV1.png" alt="go-jagt Logo">
+        <img src="./img/go-jagt_logoV1.png" alt="go-jagt Logo">
     </header>
