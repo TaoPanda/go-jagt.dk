@@ -28,6 +28,9 @@ body {
 img {
   max-width: 100%;
 }
+.opacityZero {
+  opacity: 0;
+}
 @media screen and (max-width: 1120px) {
   .wrapper {
     min-width: 0;

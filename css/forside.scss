@@ -12,6 +12,7 @@ main {
       object-position: center;
       height: 100%;
       width: 100%;
+      transition: all 2s linear;
     }
   }
   > div {
@@ -63,7 +64,7 @@ main {
     }
   }
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 460px) {
   main {
     .slide {
       display: none;
