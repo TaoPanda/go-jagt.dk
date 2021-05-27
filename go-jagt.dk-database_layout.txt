@@ -1,0 +1,17 @@
+product:
+ Id INT primekey
+ Name VARCHAR
+ Description VARCHAR
+ Picture VARCHAR
+ Price INT
+ Times-bought INT
+
+picture:
+ Id INT
+ Picture VARCHAR
+ Product-Id foringkey nullable
+
+user:
+ Id INT
+ Username VARCHAR
+ password VARCHAR (hashed)
