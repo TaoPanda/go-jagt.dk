@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #444;
+  background-image: url(../img/sunset_background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #e6e6e6;
+  width: 80%;
+  margin: auto;
+  min-width: 1100px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.opacityZero {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1120px) {
+  .wrapper {
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  width: 300px;
+  margin: 20px;
+}
+
+nav {
+  background-color: #747373;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+  z-index: 1;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  background-color: #5a5a5a;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: #323f2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: ">";
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+footer ul ::marker {
+  color: #e28000;
+}
+
+footer ul li {
+  margin: 3px;
+}
+
+@media screen and (max-width: 630px) {
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer ul {
+    width: 34%;
+  }
+}
+
+main {
+  padding: 10px;
+}
+
+main h1 {
+  margin: 0;
+}
+
+main #map {
+  width: 100%;
+  height: 400px;
+}
+
+main .kontact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 15rem auto;
+      grid-template-columns: -webkit-min-content 15rem auto;
+      grid-template-columns: min-content 15rem auto;
+  align-self: flex-start;
+  place-items: left;
+  background-color: #d9d9d9;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid #b3b3b3;
+  overflow: hidden;
+}
+
+main form h3 {
+  font-family: "Roboto", sans-serif;
+  grid-column: span 3;
+  border-bottom: 1px solid #b3b3b3;
+  background-color: #cdcdcd;
+  margin: 0;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+main form label {
+  width: 100%;
+  height: 2rem;
+  text-align: right;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main form label[for="Tlf"] {
+  grid-column: span 2;
+  text-align: center;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-column-end: 3;
+}
+
+main form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2rem;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  margin-right: 20px;
+}
+
+main form input[type="submit"] {
+  margin-bottom: 10px;
+  font-weight: bold;
+  background-color: #248f0c;
+  border-width: 1px;
+}
+
+main form #Navn {
+  width: 20rem;
+}
+
+main form #Tlf {
+  width: 7rem;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  place-self: center;
+}
+
+main form #E-mail {
+  width: 20rem;
+}
+
+main form #Besked {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20rem;
+  height: 8rem;
+  resize: none;
+}
+
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+}
+/*# sourceMappingURL=kontakt.css.map */
