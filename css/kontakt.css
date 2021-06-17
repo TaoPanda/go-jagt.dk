@@ -48,7 +48,7 @@ header img {
 }
 
 nav {
-  background-color: #747373;
+  background-color: #858585;
   position: -webkit-sticky;
   position: sticky;
   top: -2px;
@@ -72,7 +72,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #5a5a5a;
+  background-color: #6c6c6c;
   color: white;
 }
 
@@ -155,7 +155,6 @@ main form {
   -ms-grid-columns: min-content 15rem auto;
       grid-template-columns: -webkit-min-content 15rem auto;
       grid-template-columns: min-content 15rem auto;
-  align-self: flex-start;
   place-items: left;
   background-color: #d9d9d9;
   gap: 10px;
@@ -173,6 +172,14 @@ main form h3 {
   text-align: center;
   padding: 15px 0;
   width: 100%;
+}
+
+main form h5 {
+  grid-column: span 3;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 main form label {
@@ -193,6 +200,16 @@ main form label[for="Tlf"] {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-column-end: 3;
+}
+
+main form input::-webkit-outer-spin-button,
+main form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main form input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 main form input {
@@ -240,5 +257,32 @@ main ul {
   margin: 0;
   padding: 0;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 1120px) {
+  main #map {
+    height: 36vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .kontact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .kontact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main form {
+    display: none;
+  }
 }
 /*# sourceMappingURL=kontakt.css.map */

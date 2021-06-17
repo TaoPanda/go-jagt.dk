@@ -1,7 +1,7 @@
 product:
  Id INT primekey
  Name VARCHAR
- Description VARCHAR
+ Description TEXT
  Picture VARCHAR
  Price INT
  Times-bought INT
@@ -10,6 +10,7 @@ picture:
  Id INT
  Picture VARCHAR
  Product-Id foringkey nullable
+ Category VARCHAR
 
 user:
  Id INT

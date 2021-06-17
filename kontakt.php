@@ -23,7 +23,7 @@
             <li>filler</li>
             <li>filler</li>
         </ul>
-        <form action="">
+        <form action="#kontaktformular" id="kontaktformular" method="post">
             <h3>Kontaktformular</h3>
             <label for="Navn">Navn:</label>
             <input type="text" name="Navn" id="Navn">
@@ -34,6 +34,9 @@
             <label for="Besked">Besked:</label>
             <textarea name="Besked" id="Besked"></textarea>
             <input type="submit" value="Send">
+            <?php
+            include "./includes/sendmail.php"
+            ?>
         </form>
     </div>
 </main>

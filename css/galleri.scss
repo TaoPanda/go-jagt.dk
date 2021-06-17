@@ -1,0 +1,110 @@
+@import "variables", "header", "nav", "footer";
+main {
+  padding: 5px;
+  #pictures {
+    padding-top: 5px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: dense;
+    grid-auto-rows: 15vw;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+  .col-2 {
+    grid-column: span 2;
+  }
+  .col-3 {
+    grid-column: span 3;
+  }
+  .row-2 {
+    grid-row: span 2;
+  }
+  form {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: lighten($navbgcolor, 25%);
+    border-radius: 3px;
+
+    h3 {
+      padding: 0 10px;
+    }
+
+    p {
+      padding: 4px;
+      margin: 0;
+    }
+
+    input[type="checkbox"] {
+      height: 0;
+      width: 0;
+      visibility: hidden;
+    }
+
+    label {
+      cursor: pointer;
+      text-indent: -9999px;
+      width: 48px;
+      height: 24px;
+      background: grey;
+      display: block;
+      border-radius: 24px;
+      position: relative;
+    }
+
+    label:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    input:checked + label {
+      background: $buttonbgcolor;
+    }
+
+    input:checked + label:after {
+      left: calc(100% - 2px);
+      transform: translateX(-100%);
+    }
+
+    label:active:after {
+      width: 30px;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  main {
+    #pictures {
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 17vw;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    #pictures {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 20vw;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    #pictures {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 25vw;
+    }
+  }
+}
