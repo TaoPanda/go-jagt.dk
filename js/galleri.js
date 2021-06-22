@@ -25,6 +25,7 @@ function InsertPictures() {
     }
   };
   xmlhttp.open("POST", "./includes/getImgs.php", true);
+  xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   let checks = document.querySelectorAll('input[type="checkbox"]');
   let categorys = [];
   checks.forEach((check) => {
@@ -32,8 +33,9 @@ function InsertPictures() {
       categorys.push(check.value);
     }
   });
+  let data = "categorys=" + categorys;
   if (categorys.length > 0) {
-    xmlhttp.send("categorys=hi");
+    xmlhttp.send(data);
   } else {
     xmlhttp.send();
   }

@@ -1,11 +1,12 @@
 <?php
 include 'connect.php';
-print_r($_POST);
+
 $querry = "SELECT * FROM picture";
 if(isset($_POST["categorys"])){
+    $categorys = explode(',', $_POST["categorys"]);
     $querry .= " WHERE";
     $skip = 1;
-    foreach($_POST["categorys"] as $category){
+    foreach($categorys as $category){
         if($skip > 1){
             $querry .= " OR";
         }
@@ -13,14 +14,18 @@ if(isset($_POST["categorys"])){
         $querry .= " Category=?";
     }
 }
+$querry .= " ORDER BY RAND()";
 $sql = $dbh->prepare($querry);
 if(isset($_POST["categorys"])){
-    foreach($_POST["categorys"] as $category){
-        $sql->bind_param('s', $category);
+    $param = 1;
+    $categorys = explode(',', $_POST["categorys"]);
+    foreach($categorys as $category){
+        $sql->bindParam($param,$categorys[$param-1]);
+        $param++;
     }
 }
 $sql->execute();
-$rows = $sql->fetchAll();
+$rows = $sql->fetchAll(PDO::FETCH_ASSOC);
 $html = "";
 foreach($rows as $row){
     $html .= '<img src="./img/'.$row["Picture"].'" alt="">';
